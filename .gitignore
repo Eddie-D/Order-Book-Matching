@@ -1,0 +1,8 @@
+# Build directories
+build/
+
+# CMake generated files
+CMakeLists.txt
+
+# Books
+Books/
