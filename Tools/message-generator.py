@@ -103,7 +103,7 @@ class Book :
 
     def publish(self) :
         # Make the direcory
-        file_path = Path("../Books/Python_Trades.csv")
+        file_path = Path("./Books/Python_Trades.csv")
         if not file_path.parent.is_dir() :
             file_path.parent.mkdir()
 
@@ -111,7 +111,7 @@ class Book :
             for l in self.trade_log :
                 file.write(f"{l}\n")
 
-        file_path = Path("../Books/Book.csv")
+        file_path = Path("./Books/Book.csv")
         with file_path.open(mode="w") as file:
             for l in self.book_log:
                 file.write(f"{l}\n")
@@ -150,6 +150,7 @@ for i in range(n) :
 b.publish()
 
 
+print(f"Successfully Generated {n} orders")
 '''
 b = Book()
 b.process()
