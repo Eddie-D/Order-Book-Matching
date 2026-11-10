@@ -1,8 +1,14 @@
-# Build directories
+# Build directories and generated artifacts
 build/
+.cache/
+*.o
+*.obj
+*.exe
+*.out
 
-# CMake generated files
-CMakeLists.txt
+# Large/generated data files; keep only small sample fixtures if desired
+Books/*.csv
 
-# Books
-Books/
+# Editor / OS noise
+.vscode/
+.DS_Store
